@@ -7,7 +7,6 @@
 ## Deploy
 ### Hiểu về "môi trường sống" của ứng dụng
 - Cách connect tới 1 server ?
-- Câu lệnh trong Ubuntu ra sao?
 - Config những gì ?
 - Cách chạy 1 project Spring
 - Cách follow log của project đấy
