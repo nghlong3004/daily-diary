@@ -7,11 +7,13 @@
 ### 4. Docker Compose
 ### 5. Advance
 
-## 2. Học Design Patterns (Behavioral Patterns - 5 mẫu)
+## 2. Học Design Patterns (Behavioral Patterns - 6 mẫu)
 ### Strategy
 ### Template Method
 ### Observer
 ### State
+### Command
+### Chain of Responsibility
 
 ## 3. Học tiếng anh
 
