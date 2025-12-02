@@ -100,8 +100,58 @@ Command biến một hành động (operation) thành một object riêng.
     * Hàm execute() -> làm
     * Optional: undo() -> hoàn tác
 ---
-## Chain of Responsibility
+## Chain of Responsibility PATTERN
 Cho phép gửi một request đi qua một chuỗi các handler, mỗi handler:
     - Hoặc xử lý,
     - Hoăc chuyển tiếp cho handler tiếp theo trong chuỗi
 ---
+## MEDIATOR PATTERN
+Giảm phụ thuộc chéo giữa các object
+### Vấn đề thực tế
+- Class A gọi sang class B
+- Rồi class B lại gọi sang C
+- C lại callback qua A
+- Sau đó thêm D thì sẽ phải sửa lại tất cả code
+- Kết quả các class đang phụ thuộc chéo vào nhau
+
+### Mediator giải quyết bằng cách
+- Tạo 1 class trung gian, Mọi class không được phép gọi nhau trực tiếp nữa, mà chỉ nói chuyện qua trung gian.
+- A -> Mediator -> B
+- C -> Mediator -> A
+- D -> Mediator -> C
+---
+## ITERATOR PATTERN
+Cung cấp mọt cách để truy cập các thành phần của một đối tượng tổng hợp theo trình tự mà không làm lộ biểu diễn cơ bản của nó
+### Khi nào dùng Iterator
+- Khi duyệt dữ liệu không lộ implementation
+- Khi muốn duyệt 2 cấu trúc khác nhau bằng 1 cách thống nhất
+
+---
+## VISITOR PATTERN
+Biểu diễn một thao tác sẽ được thực hiện trên các phần tử của cấu trúc hướng đối tượng. Trình khách cho phép bạn định nghĩa một thao tác mới mà không cần thay đổi cá lớp của các phần tử mà thao tác đó thực hiện.
+
+### Khi nào dùng Visitor
+- Nhiều class khác nhau
+- Thêm hành vi mới
+- Không muốn mửo từng class để sửa mỗi lần thêm
+- Visitor = OCP theo chiều ngang
+---
+## MEMENTO PATTERN
+Memento cho phép lưu lại trạng thái bên trong của object, và khôi phục nó về t rạng thái đó mà không cần cấu trúc nội bộ
+
+### Bản chất
+- muốn lưu snapshot một object
+- Nhưng không muốn lộ field nội bộ
+- Và muốn khôi phục nó sau này
+
+## INTERPRETER PATTERN
+Cho một ngôn ngữ, hãy định nghĩa cách biểu diễn ngữ pháp của ngôn ngữ đó cùng với trình thông dịch sử dụng cách biểu diễn đó để giải các câu trong ngôn ngữ đó.
+
+### Dùng khi nào
+- Xây dựng ngôn ngữ con
+- Xử lý biểu thức toán học
+- Xây dựng bộ lọc
+- Config language nhỏ
+
+
+
