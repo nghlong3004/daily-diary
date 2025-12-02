@@ -2,6 +2,10 @@
 # Today Plan
 
 ## Task 1: Học câu lệnh Ubuntu
+### ping
+### curl, wget
+### ip a, ifconfig
+### ss, netstat
 ## Task 2: Practice Design Patterns
 ### Làm Boom Battle V2
 ### Tìm hiểu Maven Archetype
